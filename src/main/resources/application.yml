@@ -1,0 +1,22 @@
+spring:
+  application:
+    name:
+      creating_contract
+
+  datasource:
+    url: ${POSTGRES_CONTRACTS_DB_URL}
+    username: ${POSTGRES_CONTRACTS_DB_USERNAME}
+    password: ${POSTGRES_CONTRACTS_DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  port: 8080
+
