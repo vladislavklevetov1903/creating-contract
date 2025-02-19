@@ -16,6 +16,9 @@ spring:
       hibernate:
         format_sql: true
 
+springdoc:
+  swagger-ui:
+    path: /api-docs
 
 server:
   port: 8080
