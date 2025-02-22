@@ -4,7 +4,7 @@ import com.creating_contract.model.UserRegistrationRequestModel;
 
 public interface UserService {
 
-    void registerUser(UserRegistrationRequestModel model);
+    void registration(UserRegistrationRequestModel model);
     void deleteById(Long id);
 }
 

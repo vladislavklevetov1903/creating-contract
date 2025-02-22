@@ -21,9 +21,6 @@ public class AuthController {
        return userRegistrationFacade.registerUser(model);
     }
 
-    @GetMapping("/login")
-
-
     @PostMapping("/delete")
     public String delete(
             @RequestParam Long id

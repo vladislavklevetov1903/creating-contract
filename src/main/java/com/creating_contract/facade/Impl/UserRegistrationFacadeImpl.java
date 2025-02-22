@@ -14,7 +14,7 @@ public class UserRegistrationFacadeImpl implements UserRegistrationFacade {
     private final UserService userService;
 
     public UserRegistrationResponseModel registerUser(UserRegistrationRequestModel model){
-        userService.registerUser(model);
+        userService.registration(model);
         return new UserRegistrationResponseModel(
                 model.getFirstName(),
                 model.getLastName(),
